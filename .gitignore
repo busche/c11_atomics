@@ -26,9 +26,10 @@
 *.exe
 *.out
 *.app
+prog
 
 # Eclipse-stuff
 Debug/
 .project
 .cproject
-
+.settings/
