@@ -2,6 +2,7 @@ CXX=g++
 #CXX=clang++
 CXXFLAGS=-g -std=c++11 -Wall -pedantic
 #CXXFLAGS=-g -std=c++0x -Wall -pedantic
+
 BIN=prog
 
 SRC=$(wildcard src/*.cpp)

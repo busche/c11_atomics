@@ -12,10 +12,20 @@
 using namespace std;
 
 int main() {
-  atomic_uint_least32_t valA;
+  atomic_uint_least32_t valA(0);
+  // attention: not initialized -> random values possible!
+  atomic_uint_least32_t valB;
 
-  cout << "valA=" << valA << endl; // prints Hi
-  //cout << "Hi! "  << endl; // prints Hi
+  cout << "valA=" << valA << endl;
+  cout << "valB=" << valB << endl;
+
+  // set values
+  cout << ".. storing values .." << endl;
+  valA=10;
+  valB.store(10);
+
+  cout << "valA=" << valA << endl;
+  cout << "valB=" << valB << endl;
 
 
 	return 0;
